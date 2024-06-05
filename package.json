@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@egoist/tailwindcss-icons": "^1.8.1",
+    "@iconify-json/heroicons": "^1.1.21",
+    "@iconify-json/radix-icons": "^1.1.14",
+    "tailwindcss": "^3.4.3",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
