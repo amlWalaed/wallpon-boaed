@@ -12,46 +12,46 @@
     <nav
       class="bg-[#f7f8fc] py-6 px-10 lg:px-24 flex justify-between items-center"
     >
-      <div class="flex-shrink-0">
+      <a href="./advertise.html" class="flex-shrink-0">
         <img
           src="./assets/logo.svg"
           alt="Wallpon Logo"
-          class="w-52 h-auto max-md:hidden"
+          class="h-auto w-52 max-md:hidden"
         />
         <img
           src="./assets/appMark.svg"
           alt="Wallpon Logo"
           class="w-10 h-auto md:hidden"
         />
-      </div>
+      </a>
       <div class="flex items-center gap-8">
-        <ul class="lg:flex items-center gap-6 hidden">
+        <ul class="items-center hidden gap-6 lg:flex">
           <li>
-            <a href="#" class="text-gray-800 font-medium text-base">Features</a>
+            <a href="#" class="text-base font-medium text-gray-800">Features</a>
           </li>
           <li>
-            <a href="#" class="text-gray-800 font-medium text-base"
+            <a href="#" class="text-base font-medium text-gray-800"
               >How It Works</a
             >
           </li>
           <li>
-            <a href="#" class="text-gray-800 font-medium text-base">Benefits</a>
+            <a href="#" class="text-base font-medium text-gray-800">Benefits</a>
           </li>
           <li>
-            <a href="#" class="text-gray-800 font-medium text-base">FAQ</a>
+            <a href="#" class="text-base font-medium text-gray-800">FAQ</a>
           </li>
           <li>
-            <a href="#" class="text-gray-800 font-medium text-base">Contact</a>
+            <a href="#" class="text-base font-medium text-gray-800">Contact</a>
           </li>
         </ul>
         <div class="flex gap-4">
           <button
-            class="bg-secondary max-md:hidden text-white px-4 py-2 rounded-full text-base"
+            class="px-4 py-2 text-base text-white rounded-full bg-secondary max-md:hidden"
           >
             Advertise Now
           </button>
           <button
-            class="bg-primary text-white px-4 py-2 rounded-full text-base"
+            class="px-4 py-2 text-base text-white rounded-full bg-primary"
           >
             Get the App
           </button>
@@ -60,59 +60,59 @@
     </nav>
     <!-- end of navbar -->
     <!-- hero section -->
-    <div class="grid lg:grid-cols-2 gap-6 pb-16 container">
+    <div class="container grid gap-6 pb-16 lg:grid-cols-2">
       <!-- Left Section -->
-      <div class="max-w-lg max-lg:order-2 px-6">
-        <h1 class="text-6xl font-semibold text-gray-900 leading-tight">
+      <div class="max-w-lg px-6 max-lg:order-2">
+        <h1 class="text-6xl font-semibold leading-tight text-gray-900">
           Discover the Perfect Deal Today with WallPon
         </h1>
-        <p class="text-lg text-gray-600 mt-6">
+        <p class="mt-6 text-lg text-gray-600">
           Find exclusive offers from top-rated merchants, backed by
           recommendations from our user community.
         </p>
         <button
-          class="mt-10 bg-primary text-white py-3 px-8 rounded-full text-lg font-bold"
+          class="px-8 py-3 mt-10 text-lg font-bold text-white rounded-full bg-primary"
         >
           Get the app now
         </button>
         <div
-          class="mt-10 bg-white p-6 rounded-lg shadow-md max-w-sm max-md:hidden"
+          class="max-w-sm p-6 mt-10 bg-white rounded-lg shadow-md max-md:hidden"
         >
           <h2 class="text-xl font-bold text-gray-800">Own A Business?</h2>
-          <p class="text-gray-500 mt-2">
+          <p class="mt-2 text-gray-500">
             Expand your reach exponentially, captivate new audiences, and
             witness your profits skyrocket 🚀
           </p>
-          <a href="#" class="text-primary-700 underline mt-4 inline-block"
+          <a href="#" class="inline-block mt-4 underline text-primary-700"
             >Sign Up as Vendor</a
           >
         </div>
       </div>
 
       <!-- Right Section -->
-      <div class="relative max-lg:order-1 w-full">
+      <div class="relative w-full max-lg:order-1">
         <img
           src="./assets/frame-1194.svg"
           alt="Background"
-          class="absolute inset-0 w-full h-full object-cover z-0"
+          class="absolute inset-0 z-0 object-cover w-full h-full"
         />
         <img
           src="./assets/i-phone-15.svg"
           alt="iPhone"
-          class="relative object-cover z-10 max-w-xs"
+          class="relative z-10 object-cover max-w-xs"
         />
       </div>
     </div>
     <!-- end of hero section -->
     <section class="bg-primary">
       <div
-        class="container grid md:grid-cols-2 gap-6 py-10 place-content-center text-white"
+        class="container grid gap-6 py-10 text-white md:grid-cols-2 place-content-center"
       >
         <h2 class="text-5xl font-semibold text-white">
           We're all about bringing people together while making it effortless to
           snag fantastic deals.
         </h2>
-        <div class="rounded-lg bg-white/30 p-6 space-y-5">
+        <div class="p-6 space-y-5 rounded-lg bg-white/30">
           <h3 class="text-lg">
             With our friendly platform, you can easily connect with others and
             discover amazing discounts, right at your fingertips. Plus, by
@@ -126,20 +126,83 @@
         </div>
       </div>
     </section>
+    <!-- feature section -->
+    <section class="container grid gap-8 py-16 md:grid-cols-2">
+      <div class="space-y-6">
+        <div class="px-3 py-2 bg-white rounded w-fit text-primary">
+          Features
+        </div>
+        <h2 class="title">Your hub for discovering deals and savings</h2>
+        <div class="mx-auto">
+          <img src="./images/home-feature-image.webp" role="presentation" />
+        </div>
+      </div>
+      <div class="flex flex-col gap-8">
+        <article class="flex items-center gap-6">
+          <div
+            class="flex items-center justify-center p-4 bg-gray-100 rounded-md w-fit"
+          >
+            <span class="size-8 text-secondary i-app-seller" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-700">
+              Discover merchants near you
+            </h3>
+            <p class="text-lg text-gray-600">
+              Explore local businesses and their exclusive offers with ease.
+            </p>
+          </div>
+        </article>
+        <article class="flex items-center gap-6">
+          <div
+            class="flex items-center justify-center p-4 bg-gray-100 rounded-md w-fit"
+          >
+            <span class="size-8 text-secondary i-app-ground" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-700">
+              Get discount coupons
+            </h3>
+            <p class="text-lg text-gray-600">
+              Access to exclusive discounts from your favorite local business.
+            </p>
+          </div>
+        </article>
+        <article class="flex items-center gap-6">
+          <div
+            class="flex items-center justify-center p-4 bg-gray-100 rounded-md w-fit"
+          >
+            <span class="size-8 text-secondary i-app-feedback-hand" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-700">leave a Review</h3>
+            <p class="text-lg text-gray-600">
+              Share your experiences with the Wallpon community
+            </p>
+          </div>
+        </article>
+
+        <button
+          class="px-4 py-2 mt-auto text-white rounded-full w-fit bg-primary"
+        >
+          Download App
+        </button>
+      </div>
+    </section>
     <!-- start of section -->
     <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-8">
+      <div class="px-8 mx-auto max-w-7xl">
         <div class="text-center">
           <div
-            class="inline-block bg-green-100 px-4 py-2 rounded-md text-green-700 mb-4"
+            class="inline-block px-4 py-2 mb-4 text-green-700 bg-green-100 rounded-md"
           >
-            <span class="font-medium text-lg">How it works</span>
+            <span class="text-lg font-medium">How it works</span>
           </div>
           <h2 class="text-4xl font-semibold text-gray-900">
             How does Wallpon works?
           </h2>
         </div>
-        <div class="mt-16 flex justify-around max-md:flex-col">
+        <div class="flex justify-around mt-16 max-md:flex-col">
           <!-- Discover -->
           <div class="flex flex-col items-center text-center">
             <img
@@ -148,7 +211,7 @@
               class="w-24 h-24 mb-4"
             />
             <h3 class="text-2xl font-bold text-gray-800">Discover</h3>
-            <p class="text-lg text-gray-500 mt-2 max-w-64">
+            <p class="mt-2 text-lg text-gray-500 max-w-64">
               Open the WallPon app to search nearby coupon deals.
             </p>
           </div>
@@ -160,7 +223,7 @@
               class="w-24 h-24 mb-4"
             />
             <h3 class="text-2xl font-bold text-gray-800">Redeem</h3>
-            <p class="text-lg text-gray-500 mt-2 max-w-64">
+            <p class="mt-2 text-lg text-gray-500 max-w-64">
               Make a selection and redeem the offer.
             </p>
           </div>
@@ -172,7 +235,7 @@
               class="w-24 h-24 mb-4"
             />
             <h3 class="text-2xl font-bold text-gray-800">Save</h3>
-            <p class="text-lg text-gray-500 mt-2 max-w-64">
+            <p class="mt-2 text-lg text-gray-500 max-w-64">
               Save money and tell your friends.
             </p>
           </div>
@@ -187,9 +250,9 @@
     </div>
     <!-- start of section -->
     <div class="py-20 px-10 bg-[#f7f8fc]">
-      <div class="text-center mb-8">
-        <div class="inline-block bg-white px-4 py-1 rounded-md mb-4">
-          <span class="text-indigo-500 text-lg font-medium tracking-wide"
+      <div class="mb-8 text-center">
+        <div class="inline-block px-4 py-1 mb-4 bg-white rounded-md">
+          <span class="text-lg font-medium tracking-wide text-indigo-500"
             >Benefits</span
           >
         </div>
@@ -198,36 +261,36 @@
         </h1>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="p-6 bg-white rounded-lg shadow">
           <img
             src="./assets/handshake-deal-loan.svg"
             alt="Access to Deals"
             class="mb-4"
           />
-          <h3 class="text-2xl font-bold text-gray-800 mb-2">Access to Deals</h3>
+          <h3 class="mb-2 text-2xl font-bold text-gray-800">Access to Deals</h3>
           <p class="text-lg text-gray-600">
             Conveniently find nearby deals and discounts all in one place,
             saving time and effort.
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="p-6 bg-white rounded-lg shadow">
           <img src="./assets/frame-1200.svg" alt="Savings" class="mb-4" />
-          <h3 class="text-2xl font-bold text-gray-800 mb-2">Savings</h3>
+          <h3 class="mb-2 text-2xl font-bold text-gray-800">Savings</h3>
           <p class="text-lg text-gray-600">
             Save money on purchases by redeeming coupons and special offers
             available on the app.
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="p-6 bg-white rounded-lg shadow">
           <img
             src="./assets/shop.svg"
             alt="Support Local Businesses"
             class="mb-4"
           />
-          <h3 class="text-2xl font-bold text-gray-800 mb-2">
+          <h3 class="mb-2 text-2xl font-bold text-gray-800">
             Support Local Businesses
           </h3>
           <p class="text-lg text-gray-600">
@@ -236,25 +299,25 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="p-6 bg-white rounded-lg shadow">
           <img
             src="./assets/frame-1199.svg"
             alt="Easy Redemption"
             class="mb-4"
           />
-          <h3 class="text-2xl font-bold text-gray-800 mb-2">Easy Redemption</h3>
+          <h3 class="mb-2 text-2xl font-bold text-gray-800">Easy Redemption</h3>
           <p class="text-lg text-gray-600">
             Easily redeem coupons and offers directly from the app, hassle-free.
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="p-6 bg-white rounded-lg shadow">
           <img
             src="./assets/hr-group.svg"
             alt="Community Engagement"
             class="mb-4"
           />
-          <h3 class="text-2xl font-bold text-gray-800 mb-2">
+          <h3 class="mb-2 text-2xl font-bold text-gray-800">
             Community Engagement
           </h3>
           <p class="text-lg text-gray-600">
@@ -263,13 +326,13 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="p-6 bg-white rounded-lg shadow">
           <img
             src="./assets/percent-70.svg"
             alt="Real-Time Updates"
             class="mb-4"
           />
-          <h3 class="text-2xl font-bold text-gray-800 mb-2">
+          <h3 class="mb-2 text-2xl font-bold text-gray-800">
             Real-Time Updates
           </h3>
           <p class="text-lg text-gray-600">
@@ -282,25 +345,25 @@
     <!-- end of section -->
     <!-- start of section -->
     <div
-      class="flex flex-col lg:flex-row items-center justify-center py-20 px-10 lg:px-28 bg-white"
+      class="flex flex-col items-center justify-center px-10 py-20 bg-white lg:flex-row lg:px-28"
     >
-      <div class="lg:w-1/2 w-full flex justify-center">
+      <div class="flex justify-center w-full lg:w-1/2">
         <img
           src="./assets/become-a-wall-pon-agent-ilustration.svg"
           alt="Become a WallPon Agent Illustration"
           class="w-80 lg:w-full"
         />
       </div>
-      <div class="lg:w-1/2 w-full mt-10 lg:mt-0">
+      <div class="w-full mt-10 lg:w-1/2 lg:mt-0">
         <div class="bg-[#f6fbf2] p-2 inline-flex rounded-md mb-4">
           <span class="text-[#68a241] text-lg font-medium tracking-wide"
             >Become a WallPon Agent</span
           >
         </div>
-        <h1 class="text-4xl font-semibold text-gray-900 mb-6">
+        <h1 class="mb-6 text-4xl font-semibold text-gray-900">
           Promote and Earn at Your Own Pace
         </h1>
-        <p class="text-lg text-gray-700 mb-10">
+        <p class="mb-10 text-lg text-gray-700">
           Join WallPon as an agent and start selling with coupons and
           advertising spaces. Seize this opportunity to be part of an innovative
           platform that connects consumers with discounts at local businesses.
@@ -318,13 +381,13 @@
     <div
       class="flex flex-col items-center lg:flex-row justify-between py-20 px-10 lg:px-28 bg-[#80bc56]"
     >
-      <div class="lg:w-1/2 w-full flex flex-col items-center lg:items-start">
+      <div class="flex flex-col items-center w-full lg:w-1/2 lg:items-start">
         <div class="bg-[#bfdeab] p-2 inline-flex rounded-md mb-4">
           <span class="text-[#334699] text-lg font-medium tracking-wide"
             >Available in Google Play and Apple Store</span
           >
         </div>
-        <h1 class="text-4xl font-semibold text-white mb-6">
+        <h1 class="mb-6 text-4xl font-semibold text-white">
           Ready to unlock exclusive deals? Download WallPon now!
         </h1>
         <div class="flex gap-4">
@@ -340,7 +403,7 @@
           </button>
         </div>
       </div>
-      <div class="lg:w-1/2 w-full flex justify-center mt-10 lg:mt-0">
+      <div class="flex justify-center w-full mt-10 lg:w-1/2 lg:mt-0">
         <img
           src="./assets/available-in-google-play-and-apple-store-ilustration.svg"
           alt="App Illustration"
@@ -350,14 +413,14 @@
     </div>
     <!-- end of section -->
     <!-- start of section -->
-    <div class="py-20 px-10 lg:px-28">
-      <h1 class="text-4xl font-semibold text-gray-900 mb-10">
+    <div class="px-10 py-20 lg:px-28">
+      <h1 class="mb-10 text-4xl font-semibold text-gray-900">
         Frequently Asked Questions
       </h1>
 
       <div class="space-y-10">
         <div>
-          <div class="flex justify-between items-center">
+          <div class="flex items-center justify-between">
             <h2 class="text-2xl font-bold text-gray-800">
               How do I redeem coupons from the WallPon app?
             </h2>
@@ -367,14 +430,14 @@
               class="w-6 h-6"
             />
           </div>
-          <p class="text-lg text-gray-600 mt-2">
+          <p class="mt-2 text-lg text-gray-600">
             To redeem coupons from the WallPon app, simply select the desired
             coupon
           </p>
         </div>
 
         <div>
-          <div class="flex justify-between items-center">
+          <div class="flex items-center justify-between">
             <h2 class="text-2xl font-bold text-gray-800">
               Are the deals on WallPon available nationwide?
             </h2>
@@ -384,7 +447,7 @@
               class="w-6 h-6"
             />
           </div>
-          <p class="text-lg text-gray-600 mt-2">
+          <p class="mt-2 text-lg text-gray-600">
             While WallPon aims to provide deals from a wide range of locations,
             availability may vary depending on your location. We constantly work
             to expand our network of merchants to offer deals in more areas.
@@ -392,7 +455,7 @@
         </div>
 
         <div>
-          <div class="flex justify-between items-center">
+          <div class="flex items-center justify-between">
             <h2 class="text-2xl font-bold text-gray-800">
               Can I use WallPon to promote my own business?
             </h2>
@@ -402,14 +465,14 @@
               class="w-6 h-6"
             />
           </div>
-          <p class="text-lg text-gray-600 mt-2">
+          <p class="mt-2 text-lg text-gray-600">
             To redeem coupons from the WallPon app, simply select the desired
             coupon, and then press the button ‘’Redeem’’.
           </p>
         </div>
 
         <div>
-          <div class="flex justify-between items-center">
+          <div class="flex items-center justify-between">
             <h2 class="text-2xl font-bold text-gray-800">
               Is my personal information secure on the WallPon app?
             </h2>
@@ -419,7 +482,7 @@
               class="w-6 h-6"
             />
           </div>
-          <p class="text-lg text-gray-600 mt-2">
+          <p class="mt-2 text-lg text-gray-600">
             Yes, we take the privacy and security of our users' information
             seriously. We use industry-standard encryption and security measures
             to protect your personal information.
@@ -427,7 +490,7 @@
         </div>
 
         <div>
-          <div class="flex justify-between items-center">
+          <div class="flex items-center justify-between">
             <h2 class="text-2xl font-bold text-gray-800">
               Can I share deals with friends using the WallPon app?
             </h2>
@@ -437,14 +500,14 @@
               class="w-6 h-6"
             />
           </div>
-          <p class="text-lg text-gray-600 mt-2">
+          <p class="mt-2 text-lg text-gray-600">
             Yes, you can easily share deals with friends and family directly
             from the WallPon app.
           </p>
         </div>
 
         <div>
-          <div class="flex justify-between items-center">
+          <div class="flex items-center justify-between">
             <h2 class="text-2xl font-bold text-gray-800">
               What should I do if I encounter an issue with the WallPon app?
             </h2>
@@ -454,7 +517,7 @@
               class="w-6 h-6"
             />
           </div>
-          <p class="text-lg text-gray-600 mt-2">
+          <p class="mt-2 text-lg text-gray-600">
             If you encounter any issues or have any questions about the WallPon
             app, please contact our customer support team.
           </p>
@@ -463,9 +526,9 @@
     </div>
     <!-- end of section -->
     <div class="py-20 px-10 lg:px-28 text-center bg-[#334699]">
-      <h1 class="text-white text-4xl font-semibold mb-10">Learn more</h1>
+      <h1 class="mb-10 text-4xl font-semibold text-white">Learn more</h1>
 
-      <div class="flex flex-col lg:flex-row gap-16 justify-center mb-16">
+      <div class="flex flex-col justify-center gap-16 mb-16 lg:flex-row">
         <div class="bg-[#7081cf] p-8 rounded-lg w-full lg:w-1/2 text-center">
           <div class="flex justify-center mb-4">
             <div class="bg-[#ffffff33] p-5 rounded-full">
@@ -476,7 +539,7 @@
               />
             </div>
           </div>
-          <h2 class="text-white text-2xl font-bold mb-2">
+          <h2 class="mb-2 text-2xl font-bold text-white">
             Need more info or help? Drop us a line.
           </h2>
           <a
@@ -496,14 +559,14 @@
               />
             </div>
           </div>
-          <h2 class="text-white text-2xl font-bold mb-2">Want to advertise?</h2>
+          <h2 class="mb-2 text-2xl font-bold text-white">Want to advertise?</h2>
           <a href="#" class="text-[#becdf8] text-lg underline"
             >Post your ad now</a
           >
         </div>
       </div>
 
-      <p class="text-white text-xl font-bold mb-8">
+      <p class="mb-8 text-xl font-bold text-white">
         Get the app and start your WallPon experience today!
       </p>
       <div class="flex justify-center gap-8">
@@ -526,7 +589,7 @@
     <footer class="bg-[#334699] text-white">
       <div class="container">
         <div
-          class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-8"
+          class="flex flex-col items-start justify-between gap-12 mb-8 lg:flex-row"
         >
           <div class="flex-shrink-0">
             <img
@@ -535,16 +598,16 @@
               class="w-60"
             />
           </div>
-          <div class="flex flex-col lg:flex-row gap-16">
+          <div class="flex flex-col gap-16 lg:flex-row">
             <div>
-              <h3 class="text-lg font-medium mb-4">App Features</h3>
+              <h3 class="mb-4 text-lg font-medium">App Features</h3>
               <ul class="space-y-2">
                 <li><a href="#" class="text-gray-300">How It Works</a></li>
                 <li><a href="#" class="text-gray-300">Benefits</a></li>
               </ul>
             </div>
             <div>
-              <h3 class="text-lg font-medium mb-4">Become a WallPon Agent</h3>
+              <h3 class="mb-4 text-lg font-medium">Become a WallPon Agent</h3>
               <ul class="space-y-2">
                 <li><a href="#" class="text-gray-300">FAQS</a></li>
                 <li>
@@ -555,12 +618,12 @@
               </ul>
             </div>
             <div class="flex flex-col items-start">
-              <h3 class="text-lg font-medium mb-4">Get the app</h3>
+              <h3 class="mb-4 text-lg font-medium">Get the app</h3>
               <a href="#"
                 ><img
                   src="./assets/google-play-button.svg"
                   alt="Google Play Button"
-                  class="w-44 mb-4"
+                  class="mb-4 w-44"
               /></a>
               <a href="#"
                 ><img
@@ -571,14 +634,14 @@
             </div>
           </div>
         </div>
-        <div class="border-t border-gray-300 my-5"></div>
+        <div class="my-5 border-t border-gray-300"></div>
         <div
-          class="flex flex-col-reverse lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-0"
+          class="flex flex-col-reverse items-start justify-between gap-6 lg:flex-row lg:items-center lg:gap-0"
         >
           <div class="text-sm">
             <p>Made with <span class="text-red-500">♥</span> by Posta Studio</p>
           </div>
-          <div class="gap-8 flex text-sm">
+          <div class="flex gap-8 text-sm">
             <a href="#" class="text-gray-300">Terms</a>
             <a href="#" class="text-gray-300">Privacy</a>
             <a href="#" class="text-gray-300">Cookies</a>
