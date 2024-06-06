@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/tailwind.css" />
   </head>
-  <body class="font-sans antialiased">
+  <body class="font-sans antialiased bg-gray-100">
     <!-- Navigation Bar -->
-    <header class="py-5 bg-gray-100">
-      <div class="container flex items-center justify-between px-24 mx-auto">
-        <div class="flex items-center space-x-10">
+    <nav class="py-5">
+      <div class="container flex items-center justify-between">
+        <div class="flex items-center">
           <img
             src="./assets/logo.svg"
             alt="Logo"
@@ -22,7 +22,7 @@
             alt="Logo"
             class="w-20 h-auto lg:hidden"
           />
-          <nav class="flex space-x-12">
+          <nav class="hidden space-x-12 lg:flex">
             <a href="#" class="font-medium text-secondary">Advertise</a>
             <a href="#" class="font-medium text-gray-700"
               >Industries we serve</a
@@ -47,13 +47,11 @@
           </button>
         </div>
       </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section
-      class="container grid min-h-screen gap-5 pb-6 md:grid-cols-2 place-content-center"
-    >
-      <div class="space-y-8 max-md:order-2">
+    <section class="container grid min-h-screen gap-5 pb-6 md:grid-cols-2">
+      <div class="content-center space-y-8 max-md:order-2">
         <h2 class="font-semibold text-black text-7xl text-pretty">
           24/7 deals at your customers finger tips
         </h2>
@@ -67,7 +65,7 @@
           Post your ad now
         </button>
       </div>
-      <div class="h-full md:absolute md:end-0 max-md:order-1">
+      <div class="h-full lg:absolute md:end-0 max-md:order-1">
         <img
           src="./images/advertise-hero-image.webp"
           role="presentation"
@@ -109,113 +107,256 @@
     </section>
 
     <!-- Why Advertise with Wallpon Section -->
-    <section class="container py-10 space-y-10 bg-gray-50">
-      <div class="flex flex-col items-center justify-center gap-2">
-        <div variant="bg-primary-50 px-3 py-2 text-primary rounded">
-          Advantages of Wallpon
+    <section class="py-10 bg-gray-50">
+      <div class="container space-y-10">
+        <div class="flex flex-col items-center justify-center gap-2">
+          <div class="px-3 py-2 bg-white rounded text-primary">
+            Advantages of Wallpon
+          </div>
+          <h2 class="title">Why advertise with Wallpon?</h2>
         </div>
-        <h2 class="title">Why advertise with Wallpon?</h2>
-      </div>
 
-      <div class="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Social Media Presence -->
-        <div class="p-6 space-y-2 bg-white rounded-lg">
-          <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
-            <img src="/assets/following.svg" class="size-6" />
+        <div class="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Social Media Presence -->
+          <div class="p-6 space-y-2 bg-white rounded-lg">
+            <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
+              <span class="size-6 i-app-following" />
+            </div>
+            <h3 class="text-2xl font-medium text-gray-800">
+              Social Media Presence
+            </h3>
+            <p class="text-balance">
+              On day 1, you’ll receive an AI-generated social media post via
+              SMS,ready to share instantly across all platforms with a single
+              tap. Edit or regenerate posts as needed before sharing
+            </p>
           </div>
-          <h3 class="text-2xl font-medium text-gray-800">
-            Social Media Presence
-          </h3>
-          <p class="text-balance">
-            On day 1, you’ll receive an AI-generated social media post via
-            SMS,ready to share instantly across all platforms with a single tap.
-            Edit or regenerate posts as needed before sharing
-          </p>
-        </div>
-        <!-- Mobile Ads -->
-        <div class="p-6 space-y-2 bg-white rounded-lg">
-          <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
-            <img src="./assets/ad-paid.svg" class="size-6" />
+          <!-- Mobile Ads -->
+          <div class="p-6 space-y-2 bg-white rounded-lg">
+            <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
+              <span class="size-6 i-app-ad-paid" />
+            </div>
+            <h3 class="text-2xl font-medium text-gray-800">Mobile Ads</h3>
+            <p class="text-balance">
+              Customers view posts on social media, click, and are redirected to
+              the mobile app to view your coupon or service directly.
+            </p>
           </div>
-          <h3 class="text-2xl font-medium text-gray-800">Mobile Ads</h3>
-          <p class="text-balance">
-            Customers view posts on social media, click, and are redirected to
-            the mobile app to view your coupon or service directly.
-          </p>
-        </div>
-        <!-- Get Reviews -->
-        <div class="p-6 space-y-2 bg-white rounded-lg">
-          <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
-            <img src="./assets/vector.svg" class="size-6" />
+          <!-- Get Reviews -->
+          <div class="p-6 space-y-2 bg-white rounded-lg">
+            <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
+              <span class="size-6 i-app-vector" />
+            </div>
+            <h3 class="text-2xl font-medium text-gray-800">Get Reviews</h3>
+            <p class="text-balance">
+              When a customer redeems your coupon or engages with your service
+              offering, an automated review request is sent on your behalf.
+            </p>
           </div>
-          <h3 class="text-2xl font-medium text-gray-800">Get Reviews</h3>
-          <p class="text-balance">
-            When a customer redeems your coupon or engages with your service
-            offering, an automated review request is sent on your behalf.
-          </p>
-        </div>
-        <!-- Rankings -->
-        <div class="p-6 space-y-2 bg-white rounded-lg">
-          <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
-            <img src="./assets/gift-box.svg" class="size-6" />
+          <!-- Rankings -->
+          <div class="p-6 space-y-2 bg-white rounded-lg">
+            <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
+              <span class="size-6 i-app-gift-box" />
+            </div>
+            <h3 class="text-2xl font-medium text-gray-800">Get Reviews</h3>
+            <p class="text-balance">
+              Submitted reviews undergo our proprietary algorithm, ranking
+              similar businesses based on quality, value, and customer
+              satisfaction.
+            </p>
           </div>
-          <h3 class="text-2xl font-medium text-gray-800">Get Reviews</h3>
-          <p class="text-balance">
-            Submitted reviews undergo our proprietary algorithm, ranking similar
-            businesses based on quality, value, and customer satisfaction.
-          </p>
-        </div>
-        <!-- Redemption Insights -->
-        <div class="p-6 space-y-2 bg-white rounded-lg">
-          <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
-            <img src="./assets/lamp.svg" class="size-6" />
+          <!-- Redemption Insights -->
+          <div class="p-6 space-y-2 bg-white rounded-lg">
+            <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
+              <span class="size-6 i-app-lamp" />
+            </div>
+            <h3 class="text-2xl font-medium text-gray-800">
+              Redemption Insights
+            </h3>
+            <p class="text-balance">
+              You can analyze and determine which ads generate the highest
+              customer response and results for your business..
+            </p>
           </div>
-          <h3 class="text-2xl font-medium text-gray-800">
-            Redemption Insights
-          </h3>
-          <p class="text-balance">
-            You can analyze and determine which ads generate the highest
-            customer response and results for your business..
-          </p>
-        </div>
-        <!-- Additional Benefits -->
-        <div class="p-6 space-y-2 bg-white rounded-lg">
-          <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
-            <img src="./assets/gift-box.svg" class="size-6" />
+          <!-- Additional Benefits -->
+          <div class="p-6 space-y-2 bg-white rounded-lg">
+            <div class="content-center px-2 pt-2 rounded bg-secondary-50 w-fit">
+              <span class="size-6 i-app-gift-box" />
+            </div>
+            <h3 class="text-2xl font-medium text-gray-800">
+              Additional Benefits
+            </h3>
+            <p class="text-balance">
+              The magic of 100X occurs through crowd-sourcing! All ads are
+              visible to every user, vastly expanding your target audience, all
+              for less than $1 a day.
+            </p>
           </div>
-          <h3 class="text-2xl font-medium text-gray-800">
-            Additional Benefits
-          </h3>
-          <p class="text-balance">
-            The magic of 100X occurs through crowd-sourcing! All ads are visible
-            to every user, vastly expanding your target audience, all for less
-            than $1 a day.
-          </p>
         </div>
+        <button
+          class="block px-4 py-2 mx-auto text-white rounded-full bg-primary w-fit"
+        >
+          Get started
+        </button>
       </div>
-      <button class="block mx-auto w-fit" :label="'Get started'" />
     </section>
-
+    <!-- start section -->
+    <section class="bg-secondary">
+      <div
+        class="container flex flex-col items-center justify-center gap-6 py-16"
+      >
+        <Badge class="px-4 py-1 rounded bg-white/50 text-primary"
+          >Advertise now</Badge
+        >
+        <h2
+          class="max-w-xl text-4xl font-semibold text-center text-white text-balance"
+        >
+          Sign Up and start growing your business today!
+        </h2>
+        <button class="px-4 py-2 text-white rounded-full bg-primary">
+          Get started
+        </button>
+      </div>
+    </section>
+    <!-- vendor section -->
+    <section class="bg-white">
+      <section class="container grid gap-6 py-10 md:grid-cols-2">
+        <div class="space-y-6">
+          <div class="px-3 py-2 rounded bg-secondary-100 text-secondary w-fit">
+            Advertise now
+          </div>
+          <h2 class="text-4xl font-bold text-black">Not a vendor yet?</h2>
+          <p class="text-lg text-gray-700">
+            Sign up as a vendor and start tracking more traffic to your
+            business, with just a few steps:
+          </p>
+          <img role="presentation" src="./images/advertise-vendor-image.webp" />
+        </div>
+        <div class="content-center space-y-8">
+          <!--  Download the app -->
+          <div class="flex items-center gap-3">
+            <div
+              class="flex items-center justify-center p-4 bg-gray-100 rounded-md w-fit"
+            >
+              <span class="size-6 text-primary i-app-cloud" />
+            </div>
+            <h3 class="text-2xl font-medium text-gray-700">Download the app</h3>
+          </div>
+          <!--  Sign Up -->
+          <div class="flex items-center gap-3">
+            <div
+              class="flex items-center justify-center p-4 bg-gray-100 rounded-md w-fit"
+            >
+              <span class="size-6 text-primary i-app-sign-in-alt" />
+            </div>
+            <h3 class="text-2xl font-medium text-gray-700">Sign Up</h3>
+          </div>
+          <!--  Experience your ad’s impact on Wallpon! -->
+          <div class="flex items-center gap-3">
+            <div
+              class="flex items-center justify-center p-4 bg-gray-100 rounded-md w-fit"
+            >
+              <span class="size-6 text-primary i-app-analysis" />
+            </div>
+            <h3 class="text-2xl font-medium text-gray-700">
+              Experience your ad’s impact on Wallpon!
+            </h3>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- contact  us -->
+    <section class="text-white bg-primary">
+      <div
+        class="container flex flex-col items-center justify-center gap-6 py-20"
+      >
+        <h2 class="text-4xl font-semibold">Contact Info</h2>
+        <div
+          class="flex flex-col items-center max-w-sm gap-3 p-8 text-center rounded-lg bg-white/25"
+        >
+          <div class="px-5 pt-3 pb-2 card-blur">
+            <span class="i-radix-icons-envelope-closed size-10" />
+          </div>
+          <h3 class="text-2xl font-semibold text-pretty">
+            Need more info or help? Drop us a line
+          </h3>
+          <a href="mailto:info@wallpon.com" class="underline underline-offset-2"
+            >info@wallpon.com</a
+          >
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
-    <footer class="py-10 bg-primary">
-      <div class="container flex items-center justify-between px-24 mx-auto">
-        <div class="flex items-center space-x-8">
+    <footer class="pt-6 text-gray-200 bg-primary">
+      <div
+        class="container grid gap-6 pb-6 lg:grid-cols-2 place-content-center"
+      >
+        <div>
           <img
             src="./assets/wallpon-logo-negative-1.svg"
             alt="Wallpon Logo"
-            class="w-24 h-auto"
+            class="max-w-xs"
           />
-          <nav class="flex space-x-6">
-            <a href="#" class="text-sm text-gray-300">App Features</a>
-            <a href="#" class="text-sm text-gray-300">How It Works</a>
-            <a href="#" class="text-sm text-gray-300">Benefits</a>
-            <!-- More links here... -->
-          </nav>
         </div>
-        <div class="flex space-x-6">
-          <img src="./assets/google-play-button.svg" alt="Google Play Button" />
-          <img src="./assets/apple-store-button.svg" alt="Apple Store Button" />
+        <div class="flex items-center justify-between gap-5 max-sm:flex-col">
+          <ul
+            class="grid grid-rows-3 text-gray-200 max-sm:text-center sm:grid-flow-col gap-x-2 sm:gap-x-10 gap-y-3"
+          >
+            <li>
+              <a href="">App Features</a>
+            </li>
+            <li>
+              <a href="">How It Works</a>
+            </li>
+            <li>
+              <a href="">Benefits</a>
+            </li>
+            <li>
+              <a href="">Become a WallPon Agent</a>
+            </li>
+            <li>
+              <a href="">FAQS</a>
+            </li>
+            <li>
+              <a href="">How to Sign Up as a Vendor</a>
+            </li>
+          </ul>
+          <div class="grid gap-3">
+            <a href="#"
+              ><img
+                src="./assets/google-play-button.svg"
+                alt="Google Play Button"
+                class="mb-4 w-44"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/apple-store-button.svg"
+                alt="Apple Store Button"
+                class="w-44"
+            /></a>
+          </div>
         </div>
+      </div>
+      <div
+        class="container flex items-center justify-between gap-4 pt-6 pb-3 border-t border-gray-300 max-md:flex-col"
+      >
+        <small>Made with ♥ by Posta Studio</small>
+        <nav class="flex gap-4">
+          <span>Terms</span>
+          <span>Privacy</span>
+          <span>Cookies</span>
+        </nav>
+        <ul class="flex gap-4 text-sm">
+          <li>
+            <a class="i-app-linked-in size-5" href=""></a>
+          </li>
+          <li>
+            <a class="i-app-instagram size-5" href=""></a>
+          </li>
+          <li>
+            <a class="i-app-facebook size-5" href=""></a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

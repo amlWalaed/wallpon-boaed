@@ -1,5 +1,6 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 import animate from "tailwindcss-animate";
+import { appPlugin, icons } from "./plugin/tailwind/index";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["**/*.{html,js}"],
@@ -62,5 +63,5 @@ module.exports = {
       },
     },
   },
-  plugins: [animate],
+  plugins: [animate, appPlugin, icons],
 };
